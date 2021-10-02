@@ -12,12 +12,17 @@
         --cor-zul-acinzentado: hsl(240, 18%, 77%);
     }
     
+    main {
+        display: flex;
+        height: 100vh;
+    }
+    
     .img {
         background-image: url(./images/pattern-bg.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         margin: 0px 10px;
-        height: 11em;
+        height: 100%;
     }
     
     .content {
@@ -66,7 +71,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        bottom: 2em;
+        bottom: 0.8em;
     }
     
     .btn1 {
@@ -100,29 +105,26 @@
         display: none;
     }
     
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 45em) {
         .content {
             display: flex;
             flex-direction: row-reverse;
             background-size: 45%;
-            height: 700px
+            justify-content: center;
+            align-items: center;
         }
         .conteudo {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .img {
-            height: 20em;
-        }
         .imagem-card {
             width: 81%;
             margin: 50px;
         }
         .btn {
-            right: 16.7em;
-            top: 8em;
-            position: relative;
+            bottom: 2.5em;
+            right: 5em;
         }
         .btn1 {
             height: 50px;
@@ -133,14 +135,15 @@
             flex-direction: column;
             justify-content: center;
             width: 38%;
-            background-position: 30% 25%;
+            background-position: 30% -4px;
+            ;
         }
         .texto {
             text-align: left;
             background-size: 25%;
             background-position-x: left;
-            width: 19.8em;
-            Font-size: 32px;
+            width: 120%;
+            font-size: 32px;
             line-height: 40px;
         }
         .item {
