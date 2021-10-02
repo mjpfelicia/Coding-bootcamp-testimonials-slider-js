@@ -105,6 +105,9 @@
     }
     
     @media only screen and (min-width: 45em) {
+        main {
+            height: 100vh;
+        }
         .content {
             display: flex;
             flex-direction: row-reverse;
