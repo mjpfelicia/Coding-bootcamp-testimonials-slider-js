@@ -5,6 +5,7 @@
         padding: 0px;
         Font-size: 32px;
         font-family: "Inter";
+        box-sizing: border-box;
     }
     
      :root {
@@ -14,7 +15,7 @@
     
     main {
         display: flex;
-        height: 100vh;
+        height: 100%;
     }
     
     .img {
@@ -36,6 +37,7 @@
     }
     
     .imagem-card {
+        box-sizing: border-box;
         width: 76%;
         margin: 35px 0px 0px 50px;
         box-shadow: -0.5em 1.5em 1em -1em hsl(240deg 38% 20% / 30%);
@@ -107,7 +109,7 @@
     
     @media only screen and (min-width: 45em) {
         main {
-            height: 100vh;
+            height: 100%;
         }
         .content {
             display: flex;
