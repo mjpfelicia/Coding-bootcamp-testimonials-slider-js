@@ -1,0 +1,153 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+    body,
+    h1 {
+        margin: 0px;
+        padding: 0px;
+        Font-size: 32px;
+        font-family: "Inter";
+    }
+    
+     :root {
+        --cor-azul-escuro: hsl(240, 38%, 20%);
+        --cor-zul-acinzentado: hsl(240, 18%, 77%);
+    }
+    
+    .img {
+        background-image: url(./images/pattern-bg.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 0px 10px;
+        height: 11em;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        background-image: url(./images/pattern-curve.svg);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-size: 65%;
+        height: auto;
+    }
+    
+    .imagem-card {
+        width: 76%;
+        margin: 35px 0px 0px 50px;
+        box-shadow: -0.5em 1.5em 1em -1em hsl(240deg 38% 20% / 30%);
+    }
+    
+    .descricao {
+        background-image: url(./images/pattern-quotes.svg);
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-position-x: center;
+    }
+    
+    .texto {
+        text-align: center;
+        color: var(--cor-azul-escuro);
+        padding: 20px 30px 0px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--cor-azul-escuro);
+        font-size: 15px;
+        font-weight: 600;
+        padding-bottom: 4em;
+    }
+    
+    .btn {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 3em;
+    }
+    
+    .btn1 {
+        background-color: white;
+        box-shadow: 2px 3px 4px var(--cor-zul-acinzentado);
+        height: 35px;
+        width: 35px;
+        cursor: pointer;
+    }
+    
+    .btn-border-prev {
+        border-radius: 20px 0px 0px 20px;
+        border: none;
+    }
+    
+    .btn-border-next {
+        border-radius: 0px 20px 20px 0px;
+        border: none;
+    }
+    
+    .btn-img {
+        width: 10px;
+    }
+    
+    span {
+        color: var(--cor-zul-acinzentado);
+        font-weight: 500;
+    }
+    
+    .card-homem {
+        display: none;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .content {
+            display: flex;
+            flex-direction: row-reverse;
+            background-size: 45%;
+            height: 700px
+        }
+        .conteudo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img {
+            height: 20em;
+        }
+        .imagem-card {
+            width: 81%;
+            margin: 50px;
+        }
+        .btn {
+            right: 16.7em;
+            top: 8em;
+        }
+        .btn1 {
+            height: 50px;
+            width: 50px;
+        }
+        .descricao {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 38%;
+            background-position: 30% 25%;
+        }
+        .texto {
+            text-align: left;
+            background-size: 25%;
+            background-position-x: left;
+            width: 19.8em;
+            Font-size: 32px;
+            line-height: 40px;
+        }
+        .item {
+            display: flex;
+            flex-direction: row;
+            margin-left: 30px;
+        }
+        .card-homem {
+            display: none;
+        }
+    }
