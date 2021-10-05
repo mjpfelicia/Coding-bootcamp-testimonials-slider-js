@@ -126,6 +126,7 @@
         .imagem-card {
             width: 81%;
             margin: 50px;
+            padding-top: 10px;
         }
         .btn {
             bottom: 2.5em;
